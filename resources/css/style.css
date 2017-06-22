@@ -28,7 +28,7 @@ a {
 }
 
 div {
-  border: 1px solid black;
+display: block;
 }
 
 div.logo {
@@ -63,23 +63,37 @@ h3 {
   margin-right: 32px;
 }
 
-.column.large {
-  display: flex;
+.column .large {
   width: 630px;
 }
 
-.column.medium {
-  display: flex;
+.column .medium {
   width: 300px;
 }
 
-.column.small {
-  display: flex;
+.column .small {
   width: 240px;
+}
+
+.lead {
+  display: block;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story {
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 .img-story {
   height: 300px;
+  display: block;
+  justify-content: space-around;
 }
 
 .img-story p {
@@ -91,14 +105,31 @@ h3 {
   text-align: center;
 }
 
-#earth {
+.text-story {
+  height: 250px;
   display: block;
+  justify-content: space-around;
+}
+
+.img-story.earth {
   background-image: url('/Users/LizDohrmann/Codecademy/projects/mytimes/resources/images/img-story-2.png');
 }
 
+.img-story.camera {
+  background-image: url('/Users/LizDohrmann/Codecademy/projects/mytimes/resources/images/img-story-3.png');
+}
+
+.img-story.cats {
+  background-image: url('/Users/LizDohrmann/Codecademy/projects/mytimes/resources/images/img-story-1.png');
+}
+
 .lead .img-story {
-  display: block;
+  display: flex;
   background-image: url('/Users/LizDohrmann/Codecademy/projects/mytimes/resources/images/img-story-main.png');
+}
+
+.lead .img-story p {
+  font-size: 40px;
 }
 
 .uppercase {
